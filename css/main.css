@@ -168,11 +168,6 @@ aside {
   justify-content: center;
 }
 
-/*.form-description h3,
-.form h3 {
-  margin: 20px 0;
-}*/
-
 .features {
   display: flex;
   justify-content: center;
@@ -462,8 +457,50 @@ margin-bottom: 50px;
 
 /*---------Home Page--------*/ 
 
-  .content-wrapper {
-    width: 960px;
+   .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {                   
+    padding: 15px 0;
+  } 
+
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;    
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 32%;
+  } 
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+/*---------About Page--------*/ 
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+/*---------FAQ Page--------*/
+
+  .faq h2 {
+    width: 100%;
   }
 }
 
