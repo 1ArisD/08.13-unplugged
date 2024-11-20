@@ -84,10 +84,64 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
+/* --------------- Global Styles ------------------ */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
 /* --------------- Base Header - Footer Styles ---------------- */
 
@@ -95,6 +149,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -106,6 +161,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  color: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -113,6 +169,8 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -126,6 +184,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -163,9 +222,30 @@ footer .copyright {
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 43px;
+}
+
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+}
+
+.form .email-text {
+  color: #2a423a;
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.form .download-button {
+  background-color: #2a423a;
+  color: #e2e3ed;
+  text-transform: uppercase;
 }
 
 .features {
@@ -185,7 +265,7 @@ aside {
 }
 
 .features article {
-  width: 62%;
+  width: 50%;
   margin: 30px 0;
 }
 
@@ -196,9 +276,11 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
+  line-height: 30px;
   margin-bottom: 40px;
 }
 
@@ -212,38 +294,46 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
-.contact-content p {
+.contact-content p {  
   margin: 0;
 }
 
 /* --------------- FAQ Page ---------------- */
 
 .faq {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-flow: row wrap;
-margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin-top: 50px;
 }
 
 .faq h2 {
-margin-bottom: 40px; 
+  line-height: 30px;
+  margin-bottom: 40px; 
 }
 
 .faq-content {
-margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 24px;
 }
 
 /* ==========================================================================
@@ -349,7 +439,6 @@ margin-bottom: 50px;
     justify-content: space-between;
   }
 
-
   header nav {
     width: 20%;   
   }
@@ -362,6 +451,21 @@ margin-bottom: 50px;
     display: none;
   }
 
+  h1 {
+    font-size: 3em;
+    line-height: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 3em;
+  }
+
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -371,7 +475,7 @@ margin-bottom: 50px;
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 42%;
     margin: 0;
   }
 
@@ -408,6 +512,14 @@ margin-bottom: 50px;
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .contact h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.125em;
   }
 
   footer .copyright {
@@ -450,6 +562,12 @@ margin-bottom: 50px;
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 0.984em;
+  }
 }
 
 /* ----------------Desktop Styles------------------ */
@@ -466,7 +584,20 @@ margin-bottom: 50px;
   } 
 
   .hero-area h1 {
-    width: 70%;
+    width: 70%;    
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
   }
 
   aside .content-wrapper {
@@ -495,12 +626,19 @@ margin-bottom: 50px;
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
 /*---------FAQ Page--------*/
 
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
   }
 }
 
