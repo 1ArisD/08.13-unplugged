@@ -129,11 +129,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -160,6 +160,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 30%;
 }
 
 .header-divider {
@@ -222,6 +226,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -236,8 +243,6 @@ aside {
   justify-content: center;
   background-color: #527158;
 }
-
-
 
 aside .form {
   margin-top: 30px;
@@ -270,6 +275,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -284,7 +291,7 @@ input[type=button] {
 }
 
 .features article {
-  width: 50%;
+  width: 60%;
   margin: 30px 0;
 }
 
@@ -302,6 +309,10 @@ input[type=button] {
 .reviews h2 {
   line-height: 1;
   margin-bottom: 40px;
+}
+
+.reviews .team {
+  width: 50%;
 }
 
 .reviews h3 {
@@ -325,6 +336,10 @@ input[type=button] {
 
 .contact-content p {  
   margin: 0;
+}
+
+.map {
+
 }
 
 /* --------------- FAQ Page ---------------- */
@@ -481,6 +496,10 @@ input[type=button] {
     display: none;
   }
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -512,7 +531,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 58%;
   }
 
   .reviews article {
@@ -540,7 +559,8 @@ input[type=button] {
   footer .footer-content {    
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;    
+    align-items: center;
+    flex-direction: row;    
   }
 
   footer .contact {
@@ -620,6 +640,10 @@ input[type=button] {
   header {                   
     padding: 15px 0;
   } 
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     width: 70%; 
