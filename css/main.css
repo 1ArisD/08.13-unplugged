@@ -217,6 +217,13 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .social-icons i {
+  background-color: #527158;
+  border: 1px solid #527158;
+  border-radius: 100%; 
+  padding: 0.5em 0.59em;
+}
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -342,7 +349,7 @@ input[type=button] {
 
 .map figure {  
   position: relative;
-  padding-bottom: 56%;
+  padding-bottom: 125%;
   height: 0;
   width: 100%;
   overflow: hidden;
@@ -383,6 +390,11 @@ input[type=button] {
 
 .faq-content h4 {
   line-height: 1.333;
+  width: 90%;
+}
+
+.faq-content p {
+  width: 95%;
 }
 
 /* ==========================================================================
