@@ -534,6 +534,7 @@ input[type=button] {
     font-size: 3em;
     line-height: 1;
     margin: 0;
+    width: 82%;
   }  
 
   aside .content-wrapper {
@@ -543,12 +544,13 @@ input[type=button] {
     align-content: flex-start;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 42%;
-    margin: 0;
+   aside .content-wrapper .form-description {
+    width: 40%;
   }
 
+  aside .content-wrapper .form {
+    margin: 0;
+  }
   .features h2 {
     margin-bottom: 20px;
   }  
@@ -569,12 +571,16 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure {
+    width: 51%;
+  }
+
   .reviews article div {
-    width: 50%;
+    width: 46%;
   }
 
   .reviews h2 {
-    width: 85%;
+    width: 80%;
   }
 
   .reviews h3 {
@@ -606,6 +612,11 @@ input[type=button] {
     line-height: 1.285;
   }
 
+  footer .social-icons i{
+    margin: 0 15px;
+    padding: .58em .67em;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -621,6 +632,11 @@ input[type=button] {
 
   .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    height: 350px;
+    padding-bottom: 0;
   }
 
   .contact-section .content-wrapper h2 {
