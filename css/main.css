@@ -113,6 +113,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 700;
+  margin: 0;
 }
 
 h3,
@@ -215,13 +216,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 footer .social-icons i {
-  background-color: #527158;
-  border: 1px solid #527158;
-  border-radius: 100%; 
-  padding: 0.5em 0.59em;
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -544,13 +546,20 @@ input[type=button] {
     align-content: flex-start;
   }
 
-   aside .content-wrapper .form-description {
+   /*aside .content-wrapper .form-description {
     width: 40%;
-  }
+    margin: 0;
+  }*/
 
   aside .content-wrapper .form {
     margin: 0;
   }
+
+  aside h3,
+  aside p {
+    width: 68%;
+  }
+
   .features h2 {
     margin-bottom: 20px;
   }  
@@ -612,9 +621,9 @@ input[type=button] {
     line-height: 1.285;
   }
 
-  footer .social-icons i{
-    margin: 0 15px;
-    padding: .58em .67em;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -711,16 +720,23 @@ input[type=button] {
   }
 
   aside .content-wrapper {
-    justify-content: space-around;    
+    justify-content: space-around; 
   }
 
-  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 32%;
+    margin: 0;
   }
 
+  aside h3 {
+    width: 55%;
+  }
+
+  aside p {
+    width: 46%;
+  }
+  
   .features h2 {
-    width: 90%;
+    width: 90%;    
   }
 
   .features article {
@@ -732,13 +748,18 @@ input[type=button] {
   }
 
   .reviews article div {
-    width: 42%;
+    width: 40%;
   }
 
   footer h4 {
     font-size: 1.875em;
   }
 /*---------About Page--------*/ 
+
+.map figure {
+  height: 450px;
+  padding-bottom: 20%;
+}
 
   .mission h2 {
     width: 85%;
