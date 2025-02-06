@@ -546,11 +546,6 @@ input[type=button] {
     align-content: flex-start;
   }
 
-   /*aside .content-wrapper .form-description {
-    width: 40%;
-    margin: 0;
-  }*/
-
   aside .content-wrapper .form {
     margin: 0;
   }
@@ -644,8 +639,7 @@ input[type=button] {
   }
 
   .map figure {
-    height: 350px;
-    padding-bottom: 0;
+    padding-bottom: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -756,10 +750,9 @@ input[type=button] {
   }
 /*---------About Page--------*/ 
 
-.map figure {
-  height: 450px;
-  padding-bottom: 20%;
-}
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2 {
     width: 85%;
