@@ -91,10 +91,11 @@ html {
 }
 
 body {
+  background-color: #202322;
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  text-align: left;  
 }
 
 ul,
